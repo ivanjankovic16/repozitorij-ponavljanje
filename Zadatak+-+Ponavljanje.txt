@@ -1,0 +1,50 @@
+Zadatak 1
+1.	Napraviti novu mapu i unutar mape napraviti datoteku index.html s nekim html kôdom
+2.	Otvoriti Command Prompt, pozicionirati se u upravo napravljenu mapu
+3.	Inicijalizirati mapu kao git repozitorij (git init)
+4.	Provjeriti da li se repozitorij zbilja inicijalizirao (je li nastala .git mapa)
+5.	Provjeriti trenutno stanje repozitorija (git status)
+6.	Dodati datoteku index.html u repozitorij (git add index.html)
+7.	Potrebno je napraviti commit trenutnog stanja repozitorija (git commit)
+8.	Provjeriti trenutno stanje repozitorija (git status)
+9.	Provjeriti log repozitorija (git log)
+10.	Napraviti promjene u index.html datoteci
+11.	Provjeriti trenutno stanje repozitorija
+12.	Potrebno je napraviti commit trenutnog stanja repozitorija 
+	(git add index.html -> git commit, ili git commit -a)
+13.	Provjeriti log repozitorija (git log)
+
+Zadatak 2
+1.	Prijavite se u GitHub servis
+2.	Na GitHub-u napraviti novi javni repozitorij
+3.	Povežite lokalni repozitorij s GitHub repozitorijem (git remote add origin <repository_url>
+4.  	Prikažite dostupan remote - referencu prema udaljenom repozitoriju (git remote -v)
+5.	Potrebno je poslati sve podatke iz lokalnog git repozitorija na github (git push -u origin master)
+Rezultat:
+Zavrsno stanje treba biti repozitorij na GitHubu koji reflektira lokalni direktorij
+
+
+Zadatak 3
+1. Lokalno napraviti novu feature granu pod nazivom "list" (git checkout -b list)
+2. Izlistajte kreirane grane (git branch --list)
+3. Dodati listu u index.html 
+4. Commitati promjene i pushati promjene na GitHub repozitorij
+Rezultat:
+GitHub repozitorij ima 2 grane: "master" i "list"
+
+
+Zadatak 4
+U ovom zadatku potrebno je promjene iz grane "list" spojiti (merge) s granom "master" pomoću pull requesta na GitHubu.
+
+1. Otvoriti GitHub repozitorij i odabrati tab "Pull requests" (https://github.com/<username>/<repositoy>/pulls)
+2. Kliknuti na gumb "New pull request" te odabrati "list" granu za source i "master" granu za destination
+3. Pregledati kreirani pull request te potvrditi spajanje grane "list" s granom "master"
+	Rezultat:
+	"master" grana u GitHub repozitoriju sada sadrži promjene iz grane "list"
+
+4. Povucite promjena s udaljenog na lokalni repozitorij (git pull)
+	Rezultat:
+	"master" grana u lokalnom repozitoriju sada sadrži promjene iz grane "list"
+
+
+
